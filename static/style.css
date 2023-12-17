@@ -1,0 +1,31 @@
+body {
+    background: rgba(0,0,0,0.5) !important;
+    font-family: Tahoma, sans-serif;
+}
+
+.logo, .game_buttons, .music_player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header {
+    position: fixed;
+    background: rgba(300,300,300,0.5);
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    border-bottom: 0.5mm ridge rgba(0,0,0,0.5);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #D3D3D3;
+    color: black;
+    text-align: center;
+}
