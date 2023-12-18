@@ -25,7 +25,7 @@
                     </div>
                     <div class="menu-bar">
                         <div class="btn-group" role="group" aria-label="menu bar">
-                            <td><button class="btn btn-outline-secondary" onclick="link('#home')">Home</button></td>
+                            <td><button class="btn btn-outline-secondary" onclick="link('#')">Home</button></td>
                             <td><button class="btn btn-outline-secondary" onclick="link('#about')">About</button></td>
                             <td><button class="btn btn-outline-secondary" onclick="link('#portfolio')">Portfolio</button></td>
                             <td><button class="btn btn-outline-secondary" onclick="link('#contact')">Contact</button></td>
@@ -41,19 +41,24 @@
             <div class="home" id="home">
                 <!-- headshot/photo -->
                 <div class="headshot">
+                    
                     <img src="../static/profile_picture-modified.png" class="img-fluid" alt="Headshot of Zev Rosenbaum">
                 </div>
                 <div class="home_content">
                     <h1>Zev Rosenbaum</h1>
-                    <p class="home_content_text">Zev is a Software Engineer passionate about using technology to improve the world around him.</p>
-                    <div class="social_media_home-section">
-                        <a href="https://www.linkedin.com/in/zevrosenbaum82" target="_blank" class="fa fa-linkedin" title="LinkedIn Link: https://www.linkedin.com/in/zevrosenbaum82"></a>
-                        <a href="https://github.com/zevrosenbaum" target="_blank" class="fa fa-github" title="GitHub Link: https://github.com/zevrosenbaum"></a>
+                    <div class="row">
+                        <p class="home_content_text">Zev is a Software Engineer passionate about using technology to improve the world around him.</p>
                     </div>
-                    <div class="button-container">
-                        <button onclick="link('#portfolio')" class="home_section_button one">View Work</button>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <button onclick="link('#hireme')" class="home_section_button two">Hire Me</button>
+                    <div class="social_media_home-section">
+                            <a href="https://www.linkedin.com/in/zevrosenbaum82" target="_blank" class="fa fa-linkedin" title="LinkedIn Link: https://www.linkedin.com/in/zevrosenbaum82"></a>
+                            <a href="https://github.com/zevrosenbaum" target="_blank" class="fa fa-github" title="GitHub Link: https://github.com/zevrosenbaum"></a>
+                    </div>
+                    <div class="row">
+                        <div class="button-container">
+                            <button onclick="link('#portfolio')" class="home_section_button one">View Work</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <button onclick="link('#hireme')" class="home_section_button two">Hire Me</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,22 +80,25 @@
 
         <!-- portfolio -->
         <nav class="nav justify-content-center">
-            <div class="porfolio" id="portfolio">
-                See my GitHub
+            <div class="portfolio" id="portfolio">
+                <h1>Portfolio</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse velit nesciunt hic commodi consequatur iusto fugiat, quo ducimus pariatur architecto voluptates illo autem omnis unde est dignissimos quidem exercitationem quos.
             </div>
         </nav>
 
         <!-- contact -->
         <nav class="nav justify-content-center">
             <div class="contact" id="contact">
-                See my GitHub
+                <h1>Contact</h1>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nisi magnam dolorum, tempora, omnis molestiae, vel similique recusandae voluptates in facere ipsa cumque sapiente at modi perspiciatis? Mollitia, molestias? Suscipit.
             </div>
         </nav>
 
         <!-- hire me -->
         <nav class="nav justify-content-center">
             <div class="hireme" id="hireme">
-                See my GitHub
+                <h1>Hire Me</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ea placeat non ut assumenda suscipit maxime? Tenetur, eum provident molestias consequuntur laborum autem nobis perferendis velit officia a impedit sequi.
             </div>
         </nav>
 

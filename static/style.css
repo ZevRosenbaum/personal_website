@@ -1,10 +1,9 @@
 body {
-    /* background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%) !important; */
-    background: url('personal_website_background.jpeg') !important;
+    background: radial-gradient(circle at 10% 20%, rgb(250, 249, 246) 0%, rgb(250, 249, 246) 90%) !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
     padding-left: 10%;
     padding-right: 10%;
-    color: white !important;
+    color: black !important;
     padding-top: 10%;
 }
 
@@ -33,6 +32,10 @@ a:hover {
     width: auto;
 }
 
+.btn.btn-outline-secondary:hover {
+    transform: translateY(-1px);
+}
+
 th, td {
     padding: 15px;
 }
@@ -41,13 +44,14 @@ h1 {
     color: black !important;
     font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
     font-weight: bold !important;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .home {
     padding: 20px;
     min-height: 20%;
     object-fit: contain;
+    padding-bottom: 100%;
 }
 
 .home_content {
@@ -61,8 +65,22 @@ h1 {
     padding-top: 5%;
 }
 
-.social_media_home-section, .social_media_header {
-    text-align: left;
+.social_media_home-section {
+    .fa-github {
+        color: white;
+        background: black;
+    }
+    .fa-linkedin {
+        color: white;
+        background: #0077B5;
+    }
+    .fa-github, .fa-linkedin {
+        display: inline;
+        float: center;
+        transform: translateY(-4px);
+    }
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .social_media_header {
@@ -71,10 +89,14 @@ h1 {
     left: 0;
     top: 0;
     padding-right: 10%;
+    .fa:hover {
+        transform: translateY(-1px) !important;
+    }
 }
 
 .button-container {
     padding-top: 5%;
+    flex-direction: row;
 }
 
 .home_section_button{
@@ -86,8 +108,8 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    color: #000;
-    background-color: #fff;
+    color: white;
+    background-color: black;
     border: none;
     border-radius: 45px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -110,15 +132,6 @@ h1 {
     max-width: 35% !important;
 }
 
-.about {
-    padding-top: 50%;
-}
-
-
-.hireme {
-    padding-bottom: 10%;
-}
-
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -129,5 +142,120 @@ h1 {
 }
 
 .fa:hover {
+    opacity: 0.7;
     transform: translateY(-4px);
+}
+
+.about {
+    padding-top: 10%;
+    padding-bottom: 100%;
+}
+
+.portfolio {
+    padding-top: 10%;
+    padding-bottom: 100%;
+}
+
+.contact {
+    padding-top: 10%;
+    padding-bottom: 100%;
+}
+
+.hireme {
+    padding-top: 10%;
+    padding-bottom: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    .button-container {
+        padding-top: 20%;
+        flex-direction: column;
+    }
+
+    .home_section_button {
+        min-width: 100%;
+    }
+
+    .social_media_header {
+        display: none;
+    }
+
+    .social_media_home-section {
+        .fa-github, .fa-linkedin {
+            display: inline-block;
+            padding: 5% 5% 5% 5%;
+        }
+    }
+
+    .headshot {
+        padding-top: 50%;
+        min-width: 40%;
+    }
+
+    .about {
+        padding-top: 20%;
+        padding-bottom: 190%;
+    }
+    
+    .portfolio {
+        padding-top: 20%;
+        padding-bottom: 190%;
+    }
+    
+    .contact {
+        padding-top: 20%;
+        padding-bottom: 190%;
+    }
+    
+    .hireme {
+        padding-top: 20%;
+        padding-bottom: 210%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .button-container {
+        padding-top: 20%;
+        flex-direction: column;
+    }
+
+    .home_section_button {
+        min-width: 100%;
+    }
+
+    .social_media_header {
+        display: none;
+    }
+
+    .social_media_home-section {
+        .fa-github, .fa-linkedin {
+            display: inline-block;
+            padding: 5% 5% 5% 5%;
+        }
+    }
+
+    .headshot {
+        padding-top: 50%;
+        min-width: 40%;
+    }
+
+    .about {
+        padding-top: 30%;
+        padding-bottom: 100%;
+    }
+    
+    .portfolio {
+        padding-top: 30%;
+        padding-bottom: 100%;
+    }
+    
+    .contact {
+        padding-top: 30%;
+        padding-bottom: 100%;
+    }
+    
+    .hireme {
+        padding-top: 30%;
+        padding-bottom: 130%;
+    }
 }
