@@ -29,7 +29,6 @@
                             <td><button class="btn btn-outline-secondary" onclick="link('#about')">About</button></td>
                             <td><button class="btn btn-outline-secondary" onclick="link('#portfolio')">Portfolio</button></td>
                             <td><button class="btn btn-outline-secondary" onclick="link('#contact')">Contact</button></td>
-                            <td><button class="btn btn-outline-secondary" onclick="link('#hireme')">Hire Me</button></td>
                         </div>
                     </div>
                 </div>
@@ -41,7 +40,7 @@
             <div class="home" id="home">
                 <!-- headshot/photo -->
                 <div class="headshot">
-                    <img src="../static/professional-copy.png" class="img-fluid" alt="Headshot of Zev Rosenbaum">
+                    <img src="../static/professional.png" class="img-fluid" alt="Headshot of Zev Rosenbaum">
                 </div>
                 <div class="home_content">
                     <h1>Zev Rosenbaum</h1>
@@ -56,7 +55,7 @@
                         <div class="button-container">
                             <button onclick="link('#portfolio')" class="home_section_button one">View Work</button>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <button onclick="link('#hireme')" class="home_section_button two">Hire Me</button>
+                            <button onclick="link('#contact')" class="home_section_button two">Contact Me</button>
                         </div>
                     </div>
                 </div>
@@ -67,6 +66,9 @@
         <nav class="nav justify-content-center">
             <div class="about" id="about">
                 <h1>About</h1>
+                <div class="about_image">
+                    <img src="../static/profile_picture.jpeg" class="img-fluid" alt="Portrait of Zev Rosenbaum">
+                </div>
                 <p>Zev Rosenbaum is a Software Engineer based in the Washington, DC area. 
                 He first learned to code in middle school and immediately started building his own websites. 
                 <br><br>Zev started his career as a Financial Analyst before rediscovering his passion for computers. 
@@ -74,9 +76,6 @@
                 attaining his degree, Zev completed two Software Engineer internships at Nordstrom and 
                 Qualtrics. <br><br>Zev enjoys learning new technologies and sharing his passion with the world. 
                 Please do not hesitate to reach out!</p>
-                <div class="about_image">
-                    <img src="../static/profile_picture.jpeg" class="img-fluid" alt="Portrait of Zev Rosenbaum">
-                </div>
             </div>
         </nav>
 
@@ -110,9 +109,11 @@
                         <li>Jenkins</li>
                         <li>Docker</li>
                     </ul>
+                    <b>Check out my <a href="https://github.com/zevrosenbaum" target="_blank" title="GitHub Link: https://github.com/zevrosenbaum" class="link-primary">GitHub</a> 
+                        and <a href="../static/Zev_Rosenbaum_Resume-list.pdf" target="_blank" title="Link to the Resume of Zev Rosenbaum" class="link-primary">Resume</a></b>
                 </div>
                 <div class="portfolio-career-highlights">
-                    <h3>Career Highlights (so far)</h3>
+                    <h3>Career Highlights</h3>
                     <ul>
                         <li><b>Nordstrom Resale Platform</b><br><i>Ranked Top 5 at Spring 2023 Nordstrom Hackathon</i></li>
                             <ul>
@@ -129,9 +130,9 @@
                                 <li>Program that identifies the country based on a user-uploaded image.</li>
                                 <li>Quantified the similarity between two images by applying a contrastive language-image pre training (CLIP)-based pre-trainined model from OpenAI.</li>
                             </ul>
-                            Demo below:
+                            Demo below:<br>
                             <img src="../static/flag_lookup_demo.gif" class="img-fluid" alt="Demo of Flag Lookup App">
-                            *See more info at the project's <a href="https://github.com/ZevRosenbaum/flag_lookup_app" target="_blank" alt="GitHub Repo for Flag Lookup App: https://github.com/ZevRosenbaum/flag_lookup_app" style="color: blue;">GitHub repository</a>
+                            <br>*See more info at the project's <a href="https://github.com/ZevRosenbaum/flag_lookup_app" target="_blank" title="GitHub Repo for Flag Lookup App: https://github.com/ZevRosenbaum/flag_lookup_app" class="link-primary">GitHub repository</a>
                     </ul>
                 </div>
             </div>
@@ -155,15 +156,6 @@
                         <input type="reset" value="Clear" style="width: 100%;" onclick="clear_contents()">
                     </form>
                 </div>
-            </div>
-        </nav>
-
-        <!-- hire me -->
-        <nav class="nav justify-content-center">
-            <div class="hireme" id="hireme">
-                <h1>Hire Me</h1>
-                Email: zevrosenbaum82@gmail.com<br>
-                Cell: (+1) 856-524-8081
             </div>
         </nav>
 
