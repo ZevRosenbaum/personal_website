@@ -153,7 +153,6 @@ h1 {
     .about_image {
         float: left;
         max-width: 49%;
-        border: 1px solid rgba(0, 0, 0, 0.5);
         box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
     }
 }
