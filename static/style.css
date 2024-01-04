@@ -228,10 +228,20 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 
 @media screen and (max-width: 780px) {
+    .btn.btn-outline-secondary:hover {
+        background: none;
+        font-size: 20px;
+        color: black;
+        border: none;
+        width: auto;
+        transform: none;
+    }
+
     .button-container {
         padding-top: 20%;
         flex-direction: column;
     }
+
     .home {
         padding-bottom: 120%;
     }
